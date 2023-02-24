@@ -10,9 +10,11 @@ fi
 read -p "Requirements for this script are gunzip, wget and apt, do you have all of those programms? (y/n) " response
 
 # Check if the response is "y" or "Y" (yes)
-if [[ "$response" =~ ^[Yy]$ ]]; then
+if [["$response"=~[Yy]]]
+then
    # Perform the action
    # Add your code here
+   echo "great"
 else
    # Do not perform the action
    echo "Install those first"
